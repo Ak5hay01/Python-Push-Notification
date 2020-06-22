@@ -23,14 +23,9 @@ push_service = FCMNotification(api_key="Server Api KEY under cloud messaging on 
  print(result)
 # --------------------------------------End Single device -----------------------------------------
 
-
-
 # Send to multiple devices by passing a list of ids.
 
-
 registration_id1 = "Device registration_id / token generated on Android and iOS device."
-
-
 registration_id2 = "Device registration_id / token generated on Android and iOS device."
 
 registration_ids = [registration_id1, registration_id2]
@@ -41,4 +36,3 @@ result = push_service.notify_multiple_devices(registration_ids=registration_ids,
 
 print(result)
 
-# ----------------------------------End Multiple
